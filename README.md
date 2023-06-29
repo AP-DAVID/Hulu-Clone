@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 You can test the project using :
 ```bash
 npm run test
-
+```
 ## Getting Started
 
 First, run the development server:
