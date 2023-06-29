@@ -8,8 +8,8 @@ const Thumbnail = forwardRef(({ result }, ref) => {
     const BASE_URL = 'https://image.tmdb.org/t/p/original/';
 
   return (
-    <div ref={ref} className='p-2 group cursor-pointer transition ease-in transform sm:hover:scale-105 hover:z-50'>
-      <Image src={`${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`} height={1000} width={1920}/>
+    <div role="thumbnail" data-testid={`thumbnail-${result.id}`} ref={ref} className='p-2 group cursor-pointer transition ease-in transform sm:hover:scale-105 hover:z-50'>
+      <Image role="img" alt="thumbnail" src={`${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`} height={1000} width={1920}/>
       <div className='p-2'>
         <p className='truncate max-w-md'>{result.overview}</p>
         <h2 className='mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold'>{result.title || result.original_name}</h2>
