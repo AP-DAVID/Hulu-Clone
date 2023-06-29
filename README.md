@@ -4,6 +4,11 @@ Just a website to view trending movies in most genre in the world.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Testing
+You can test the project using :
+```bash
+npm run test
+
 ## Getting Started
 
 First, run the development server:
